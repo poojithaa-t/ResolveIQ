@@ -1,0 +1,78 @@
+Project: Smart Complaint Management System
+Description
+
+This is a full-stack web application built using React (frontend), Node.js/Express (backend), and MongoDB (database) with an NLP module (Python/Flask API or Node.js library) for sentiment analysis.
+
+The system allows students/residents/employees to lodge complaints (e.g., hostel, college, office issues).
+The AI module automatically analyzes the complaint text and assigns an urgency priority (High, Medium, Low) using sentiment detection and keywords.
+
+Admins get a dashboard to track complaints, filter by status/priority, and view analytics on trends and resolution performance.
+
+Core Features (Must Do ✅)
+1️⃣ User Features
+
+Register/login (JWT auth).
+
+Submit complaint with category, description, and optional file/image.
+
+View complaint status (Pending, In Progress, Resolved).
+
+Get notified when status changes.
+
+2️⃣ Admin Features
+
+Dashboard with all complaints.
+
+Filter complaints by category, priority, and status.
+
+Update status (e.g., assign technician, mark resolved).
+
+3️⃣ AI/NLP Module
+
+Analyze complaint text using sentiment analysis (positive/negative/neutral tone + urgency keywords).
+
+Assign priority level:
+
+High: urgent, angry, negative sentiment (“no water for 2 days”, “broken electricity”)
+
+Medium: normal complaints (“WiFi slow”, “need cleaning”)
+
+Low: casual/non-urgent issues (“fan speed low”, “painting required”)
+
+4️⃣ Visual Analytics
+
+Admin dashboard with charts (React + Chart.js / Recharts).
+
+Show:
+
+Number of complaints per category
+
+Complaint resolution times
+
+Priority distribution (High/Medium/Low)
+
+Optional Advanced Features (Good for Resume 🌟)
+
+Role-based access (Students vs Admins).
+
+Search & filter complaints by keywords.
+
+Notification system (Email/SMS when status updates).
+
+Export complaints report (CSV/PDF).
+
+Chatbot for auto-response (FAQ-based).
+
+Tech Stack
+
+Frontend: React.js (React Router, Context API/Redux, Material-UI/Chakra UI)
+
+Backend: Node.js + Express.js
+
+Database: MongoDB (Mongoose ORM)
+
+AI/NLP Module: Python Flask API (NLTK, spaCy, TextBlob, or HuggingFace model)
+
+Charts/Analytics: Chart.js / Recharts
+
+Authentication: JWT-based login
